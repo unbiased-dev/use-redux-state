@@ -1,0 +1,43 @@
+{
+    "name": "usereduxstate",
+    "version": "0.0.1",
+    "description": "Use redux with a hook, similar to useState. Includes async handling.",
+    "main": "dist/use-redux-state.js",
+    "module": "dist/use-redux-state.module.js",
+    "unpkg": "dist/use-redux-state.umd.js",
+    "scripts": {
+        "build": "microbundle --raw",
+        "dev": "microbundle watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isakkeyten/use-redux-state.git"
+    },
+    "np": {
+        "yarn": false,
+        "contents": "dist",
+        "yolo": true
+    },
+    "keywords": [
+        "react",
+        "redux",
+        "hooks",
+        "state"
+    ],
+    "author": "Mario Rajcik",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/isakkeyten/use-redux-state/issues"
+    },
+    "homepage": "https://github.com/isakkeyten/use-redux-state#readme",
+    "dependencies": {
+        "lodash.get": "^4.4.2",
+        "lodash.set": "^4.3.2"
+    },
+    "peerDependencies": {
+        "react-redux": "^7.2.0"
+    },
+    "devDependencies": {
+        "microbundle": "^0.12.3"
+    }
+}

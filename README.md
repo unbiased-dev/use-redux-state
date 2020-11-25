@@ -14,9 +14,15 @@ The npm package name is currently 'usereduxstate' (no hyphens)
 This is probably bound to change, i.e. the package will be scoped.
 ```
 
+## Installation ⚙️
+
+```bash
+npm install usereduxstate --save
+```
+
 ## How to use
 
-1. Create a reducer and add the async middleware
+#### 1. Create a reducer and add the async middleware
 
 ```js
 import { createStore, applyMiddleware } from 'redux';
@@ -34,7 +40,7 @@ const store = createStore(reducer, applyMiddleware(asyncMiddleware));
 export default store;
 ```
 
-2. Wrap your app with the store just as you would
+#### 2. Wrap your app with the store just as you would
 
 ```js
 import React from 'react';
@@ -55,7 +61,7 @@ ReactDOM.render(
 );
 ```
 
-3. Just use it!
+#### 3. Just use it! 🎉
 
 ```js
 import React from 'react';

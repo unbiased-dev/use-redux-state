@@ -7,6 +7,10 @@
 Use redux with a hook, similar to useState.
 Comes with async handling support.
 
+<br />
+
+[![Edit use-redux-state-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-redux-state-demo-jccpo?fontsize=14&hidenavigation=1&theme=dark&view=editor)
+
 ## Important ⚠️
 
 ```

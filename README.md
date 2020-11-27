@@ -1,6 +1,6 @@
 ![use-redux-state logo](/logo.png?raw=true 'Optional Title')
 
-![version](https://badge.fury.io/gh/isakkeyten%2Fuse-redux-state.svg) ![size](https://badgen.net/bundlephobia/minzip/usereduxstate) ![treeshakable](https://badgen.net/bundlephobia/tree-shaking/usereduxstate) ![last commit](https://badgen.net/github/last-commit/isakkeyten/use-redux-state) ![license](https://badgen.net/github/license/isakkeyten/use-redux-state) ![open issues](https://badgen.net/github/open-issues/isakkeyten/use-redux-state)
+![version](https://badge.fury.io/gh/isakkeyten%2Fuse-redux-state.svg) ![size](https://badgen.net/bundlephobia/minzip/use-redux-state) ![treeshakable](https://badgen.net/bundlephobia/tree-shaking/use-redux-state) ![last commit](https://badgen.net/github/last-commit/isakkeyten/use-redux-state) ![license](https://badgen.net/github/license/isakkeyten/use-redux-state) ![open issues](https://badgen.net/github/open-issues/isakkeyten/use-redux-state)
 
 # use-redux-state
 
@@ -11,17 +11,11 @@ Comes with async handling support.
 
 [![Edit use-redux-state-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-redux-state-demo-jccpo?fontsize=14&hidenavigation=1&theme=dark&view=editor)
 
-## Important ⚠️
-
-```
-The npm package name is currently 'usereduxstate' (no hyphens)
-This is probably bound to change, i.e. the package will be scoped.
-```
 
 ## Installation ⚙️
 
 ```bash
-npm install usereduxstate --save
+npm install use-redux-state --save
 ```
 
 ## How to use
@@ -30,7 +24,7 @@ npm install usereduxstate --save
 
 ```js
 import { createStore, applyMiddleware } from 'redux';
-import { createReducer, asyncMiddleware } from 'usereduxstate';
+import { createReducer, asyncMiddleware } from 'use-redux-state';
 
 const initialState = {
   count: 0,
@@ -69,7 +63,7 @@ ReactDOM.render(
 
 ```js
 import React from 'react';
-import { useRedux, useAsync } from 'usereduxstate';
+import { useRedux, useAsync } from 'use-redux-state';
 
 const fetchUserAction = async ({ payload, get, set }) => {
   try {
@@ -135,7 +129,7 @@ const action = useAsync({
     // callback function
     // payload - your passed value at execution
     // set - set('any.nested.path', value) - sets value to store
-    // get - cosnt value = get('any.nested.path) - returns store value
+    // get - const value = get('any.nested.path') - returns store value
   },
 });
 ```

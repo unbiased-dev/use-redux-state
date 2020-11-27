@@ -1,5 +1,5 @@
 {
-    "name": "usereduxstate",
+    "name": "use-redux-state",
     "version": "0.0.1",
     "description": "Use redux with a hook, similar to useState. Includes async handling.",
     "main": "dist/use-redux-state.js",

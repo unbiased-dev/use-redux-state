@@ -7,17 +7,18 @@
     "unpkg": "dist/use-redux-state.umd.js",
     "scripts": {
         "build": "microbundle --raw",
-        "dev": "microbundle watch"
+        "dev": "microbundle watch",
+        "size": "size-limit"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/isakkeyten/use-redux-state.git"
     },
-    "np": {
-        "yarn": false,
-        "contents": "dist",
-        "yolo": true
-    },
+    "size-limit": [
+        {
+            "path": "dist/use-redux-state.js"
+        }
+    ],
     "keywords": [
         "react",
         "redux",
@@ -38,6 +39,8 @@
         "react-redux": "^7.2.0"
     },
     "devDependencies": {
-        "microbundle": "^0.12.3"
+        "@size-limit/preset-small-lib": "^4.9.0",
+        "microbundle": "^0.12.3",
+        "size-limit": "^4.9.0"
     }
 }
